@@ -18,7 +18,12 @@ function Home() {
     >
       <Grid item xs={12} sm={12} md={5} display={"flex"} alignItems={"center"}>
         <Container>
-          <Typography variant="h2" fontWeight={"600"} color={"white"}>
+          <Typography
+            variant="h2"
+            fontSize={matches ? "8vw" : "4vw"}
+            fontWeight={"600"}
+            color={"white"}
+          >
             Welcome to TamTree,
           </Typography>
           <Typography
@@ -37,7 +42,7 @@ function Home() {
         sm={12}
         md={5}
         display={"flex"}
-        alignItems={"center"}
+        alignItems={matches ? "flex-start" : "center"}
         justifyContent={matches ? "center" : "flex-end"}
       >
         <img
