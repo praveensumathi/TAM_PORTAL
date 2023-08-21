@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import Navbar from "./Navbar";
 import Home from "./Home";
+import ChooseUs from "./ChooseUs";
 
 const theme = createTheme({
   palette: {
@@ -27,6 +28,7 @@ function App() {
       <Box component="main">
         <Toolbar />
         <Home />
+        <ChooseUs/>
       </Box>
     </ThemeProvider>
   );
