@@ -6,3 +6,78 @@ body {
   padding: 0px;
   overflow-x: hidden;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+.card {
+  width: 200px;
+  height: 200px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.card:hover {
+  background-color: #e0e0e0;
+}
+
+/* .card1:hover{
+  background-color: rgb(192, 233, 233);
+} */
+.card2:hover {
+  background-color: rgb(236, 206, 240);
+}
+
+.card3:hover {
+  background-color: rgb(197, 211, 237);
+}
+
+.card4:hover {
+  background-color: rgb(208, 236, 207);
+}
+
+.card1 {
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.card2 {
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.card3 {
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.card4 {
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.card-content {
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
+  background-position: bottom left;
+
+  background-repeat: no-repeat;
+  background-size: auto;
+  opacity: 1;
+}
+p {
+  margin: 0;
+  padding: 0;
+}

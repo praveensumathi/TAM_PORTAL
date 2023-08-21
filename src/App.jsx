@@ -10,6 +10,8 @@ import {
 } from "@mui/material";
 import Navbar from "./Navbar";
 import Home from "./Home";
+import Services from "./Services";
+import Contactus from "./Contactus";
 
 const theme = createTheme({
   palette: {
@@ -27,6 +29,8 @@ function App() {
       <Box component="main">
         <Toolbar />
         <Home />
+        <Services />
+        <Contactus/>
       </Box>
     </ThemeProvider>
   );
