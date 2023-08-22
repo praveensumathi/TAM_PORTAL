@@ -25,7 +25,7 @@ function Contactus() {
   return (
     <Box
       style={{
-        backgroundImage: 'url("/assets/images/home.png")',
+              backgroundImage: 'url("/assets/images/home.png")',
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100%",
