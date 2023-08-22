@@ -12,7 +12,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import Services from "./Services";
 import Contactus from "./Contactus";
-
+import About from "./About";
 const theme = createTheme({
   palette: {
     primary: {
@@ -29,8 +29,9 @@ function App() {
       <Box component="main">
         <Toolbar />
         <Home />
+        <About />
         <Services />
-        <Contactus/>
+        <Contactus />
       </Box>
     </ThemeProvider>
   );

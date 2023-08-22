@@ -4,7 +4,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Box, CardActionArea } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import "./App.css";
 
 import { useMediaQuery } from "@mui/material";
@@ -13,7 +13,7 @@ import { useMediaQuery } from "@mui/material";
 export default function Services() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
   const isMediumScreen = useMediaQuery(
-    "(min-width: 651px) and (max-width: 1700px)"
+    "(min-width: 800px) and (max-width: 1700px)"
   );
 
   const image2 = [
@@ -39,7 +39,7 @@ export default function Services() {
       className: "card3",
       id: 3,
       img: "/assets/images/homevector.png",
-      title: "SAP and PeopleSoft Training",
+      title: "SAP and PeopleSoft  Training",
       description:
         "   Unlock the potential of SAP and PeopleSoft with our comprehensive training programs. Our experienced trainers provide hands-on learning experiences that empower individuals and teams to harness the power of these enterprise solutions effectively.",
 
@@ -53,31 +53,32 @@ export default function Services() {
         "Tam Tree understands that the right team makes all the difference. We offer top-tier staffing solutions for a variety of roles, including fullstack developers, as well as SAP and PeopleSoft professionals. Fulfill your workforce needs across various technologies with our curated talent pool.",
 
     },
+
   ];
 
   return (
     <Box
-      sx={{ marginBottom: "15px", padding: "30px" }}
+      sx={{ marginBottom: "15px", padding: "30px", height: "100%" }}
       data-aos="fade-left"
       data-aos-duration="2000"
     >
 
       <Typography
-        variant="h5"
-
+        variant="h3" fontWeight={"500"} my={2}
         sx={{
           display: "flex",
+          textAlign: "center",
           justifyContent: "center",
           marginBottom: "20px",
-          fontStyle: "italic",
+
         }}
       >
-        <b>Our Featured Services</b>
+        Our Featured Services
 
       </Typography>
 
       <Box
-        className={isSmallScreen ? "portfolioBoxM" : "portfolioBoxL"}
+
         sx={{
           display: "flex",
           flexDirection: isSmallScreen ? "column" : "row",
@@ -85,6 +86,7 @@ export default function Services() {
           gap: 5,
           padding: "15px",
           justifyContent: isMediumScreen ? "center" : "flex-start",
+
         }}
       >
         {image2.map((item, index) => (
@@ -94,15 +96,9 @@ export default function Services() {
 
             sx={{
               marginBottom: "10px",
-              width: isSmallScreen
-                ? "100%"
-                : isMediumScreen
-                  ? "calc(50% - 20px)"
-                  : "calc(30% - 20px)",
+              textAlign: "center",
               maxWidth: "300px",
-              maxHeight: "500px",
-              marginLeft: isSmallScreen ? "0" : "10px",
-              marginRight: isSmallScreen ? "0" : "10px",
+              height: "auto",
               boxShadow: "none",
 
               "&:hover": {
@@ -117,7 +113,7 @@ export default function Services() {
             }}>
               <CardMedia
                 component="img"
-                height="200"
+                // height="200px"
                 image={item.img}
                 alt="green iguana"
 
@@ -138,8 +134,6 @@ export default function Services() {
                 </Typography>
               </CardContent>
             </Box>
-
-
           </Card>
 
         ))}
