@@ -66,7 +66,7 @@ export default function Services() {
         variant="h3"
         fontWeight={"500"}
         my={2}
-        fontSize={isSmallScreen ? "10vw" : "4vw"}
+        fontSize={isSmallScreen ? "8vw" : "4vw"}
         sx={{
           display: "flex",
           textAlign: "center",
@@ -97,6 +97,7 @@ export default function Services() {
               maxWidth: "300px",
               height: "auto",
               boxShadow: "none",
+              
 
               "&:hover": {
                 cursor: "pointer",

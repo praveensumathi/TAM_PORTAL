@@ -20,7 +20,7 @@ function About() {
             variant="h3"
             fontWeight={"500"}
             my={2}
-            fontSize={matches ? "10vw" : "4vw"}
+            fontSize={matches ? "8vw" : "4vw"}
           >
             About Us
           </Typography>

@@ -30,30 +30,24 @@ function Contactus() {
         backgroundPosition: "center",
         width: "100%",
         minHeight: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
       }}
     >
       <Container>
         <Typography
           variant="h3"
           fontWeight={"500"}
-          fontSize={isSmallScreen ? "10vw" : "4vw"}
           my={2}
           textAlign="center"
           color="white"
+          fontSize={isSmallScreen ? "8vw" : "4vw"}
         >
           Contact Us
         </Typography>
         <Typography
           variant="h6"
-          
           sx={{
             display: "flex",
             justifyContent: "center",
-
             marginBottom: "20px",
             textAlign: "center",
             color: "white",
