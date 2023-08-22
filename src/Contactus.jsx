@@ -25,7 +25,7 @@ function Contactus() {
   return (
     <Box
       style={{
-              backgroundImage: 'url("/assets/images/home.png")',
+        backgroundImage: 'url("/assets/images/home.png")',
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100%",
@@ -40,6 +40,7 @@ function Contactus() {
         <Typography
           variant="h3"
           fontWeight={"500"}
+          fontSize={isSmallScreen ? "10vw" : "4vw"}
           my={2}
           textAlign="center"
           color="white"
@@ -48,9 +49,11 @@ function Contactus() {
         </Typography>
         <Typography
           variant="h6"
+          
           sx={{
             display: "flex",
             justifyContent: "center",
+
             marginBottom: "20px",
             textAlign: "center",
             color: "white",

@@ -62,23 +62,22 @@ export default function Services() {
       data-aos="fade-left"
       data-aos-duration="2000"
     >
-
       <Typography
-        variant="h3" fontWeight={"500"} my={2}
+        variant="h3"
+        fontWeight={"500"}
+        my={2}
+        fontSize={isSmallScreen ? "10vw" : "4vw"}
         sx={{
           display: "flex",
           textAlign: "center",
           justifyContent: "center",
           marginBottom: "20px",
-
         }}
       >
         Our Featured Services
-
       </Typography>
 
       <Box
-
         sx={{
           display: "flex",
           flexDirection: isSmallScreen ? "column" : "row",
@@ -86,14 +85,12 @@ export default function Services() {
           gap: 5,
           padding: "15px",
           justifyContent: isMediumScreen ? "center" : "flex-start",
-
         }}
       >
         {image2.map((item, index) => (
           <Card
             key={item.id}
             className={item.className}
-
             sx={{
               marginBottom: "10px",
               textAlign: "center",
@@ -105,40 +102,48 @@ export default function Services() {
                 cursor: "pointer",
                 boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.2)",
               },
-
             }}
           >
-            <Box className="card-content" style={{
-              height: "100%"
-            }}>
+            <Box
+              className="card-content"
+              style={{
+                height: "100%",
+              }}
+            >
               <CardMedia
                 component="img"
                 // height="200px"
                 image={item.img}
                 alt="green iguana"
-
                 sx={{
-                  width: '50%',
-                  height: 'auto',
-                  display: 'block',
-                  margin: 'auto',
+                  width: "50%",
+                  height: "auto",
+                  display: "block",
+                  margin: "auto",
                 }}
               />
-              <CardContent >
-                <Typography gutterBottom variant="h6" component="div" align="center">
+              <CardContent>
+                <Typography
+                  gutterBottom
+                  variant="h6"
+                  component="div"
+                  align="center"
+                >
                   {item.title}
                 </Typography>
 
-                <Typography variant="body2" color="text.secondary" align="center">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  align="center"
+                >
                   {item.description}
                 </Typography>
               </CardContent>
             </Box>
           </Card>
-
         ))}
       </Box>
-
     </Box>
   );
 }

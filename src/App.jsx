@@ -28,7 +28,7 @@ function App() {
       <Navbar />
       <Box component="main">
         <Toolbar />
-        <Home />
+        <Home/>
         <About />
         <Services />
         <Contactus />
