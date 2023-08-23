@@ -3,16 +3,19 @@ import React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Home() {
-  const matches = useMediaQuery("(max-width:600px)");
+  const matches = useMediaQuery("(max-width:900px)");
 
   return (
     <Grid
       container
       justifyContent={"center"}
       sx={{
-        backgroundImage: "url(/assets/images/home.png)",
+        backgroundImage: "url(./assets/images/home.png)",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        xs: {
+          justifyContent: "center",
+        },
       }}
     >
       <Grid item xs={12} sm={12} md={6} display={"flex"} alignItems={"center"}>
@@ -50,7 +53,7 @@ function Home() {
         justifyContent={matches ? "center" : "flex-end"}
       >
         <img
-          src="/assets/images/homevector.png"
+          src="./assets/images/homevector.png"
           style={{
             // objectFit: "contain",
             maxWidth: "100%",

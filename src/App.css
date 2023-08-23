@@ -8,3 +8,92 @@ body {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+
+
+.card {
+  width: 200px;
+  height: auto;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+
+
+.card1 {
+  /* background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp); */
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto;
+  animation-fill-mode: both;
+
+}
+
+.card1:hover {
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp), url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
+  background-position: top right, bottom left;
+  animation: myfirst 5s;
+  animation-direction: alternate;
+}
+
+
+.card2 {
+  /* background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp); */
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.card2:hover {
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp), url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
+  background-position: top right, bottom left;
+
+}
+
+.card3 {
+  /* background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp); */
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+
+.card3:hover {
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp), url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
+  background-position: top right, bottom left;
+
+}
+
+.card4 {
+  /* background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp); */
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.card4:hover {
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp), url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
+  background-position: top right, bottom left;
+
+}
+
+.card-content {
+  /* background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp); */
+  background-position: bottom left;
+
+  background-repeat: no-repeat;
+  background-size: auto;
+  opacity: 1;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
