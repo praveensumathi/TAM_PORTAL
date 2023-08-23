@@ -56,7 +56,7 @@ function Home() {
         justifyContent={matches ? "center" : "flex-end"}
       >
         <img
-          src="/assets/images/homevector.png"
+          src="./assets/images/homevector.png"
           style={{
             objectFit: "contain",
             maxWidth: "100%",

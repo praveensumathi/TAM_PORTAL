@@ -15,7 +15,7 @@ export default function Services() {
     {
       className: "card1",
       id: 1,
-      img: "/assets/images/homevector.png",
+      img: "./assets/images/homevector.png",
       title: "Web and Mobile App Development",
       description:
         "Our expert team of developers, designers, and architects collaborates to create seamless, user-friendly web and mobile applications. From concept to deployment, we leverage the latest fullstack technologies to build solutions that meet your unique business requirements.",
@@ -23,7 +23,7 @@ export default function Services() {
     {
       className: "card2",
       id: 2,
-      img: "/assets/images/homevector.png",
+      img: "./assets/images/homevector.png",
       title: "Fullstack Expertise",
       description:
         "   With proficiency in both frontend and backend technologies, we provide holistic fullstack development services. Our teams excel in utilizing frameworks, databases, and languages to craft powerful, dynamic applications that drive growth and innovation.",
@@ -31,7 +31,7 @@ export default function Services() {
     {
       className: "card3",
       id: 3,
-      img: "/assets/images/homevector.png",
+      img: "./assets/images/homevector.png",
       title: "SAP and PeopleSoft  Training",
       description:
         "   Unlock the potential of SAP and PeopleSoft with our comprehensive training programs. Our experienced trainers provide hands-on learning experiences that empower individuals and teams to harness the power of these enterprise solutions effectively.",
@@ -39,7 +39,7 @@ export default function Services() {
     {
       className: "card4",
       id: 4,
-      img: "/assets/images/homevector.png",
+      img: "./assets/images/homevector.png",
       title: "Technology Staffing",
       description:
         "Tam Tree understands that the right team makes all the difference. We offer top-tier staffing solutions for a variety of roles, including fullstack developers, as well as SAP and PeopleSoft professionals. Fulfill your workforce needs across various technologies with our curated talent pool.",
