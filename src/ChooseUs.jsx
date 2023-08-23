@@ -112,7 +112,7 @@ function ChooseUs() {
             md={5}
             style={{
               display: matches ? "flex" : index % 2 == 0 ? "flex" : "none",
-              justifyContent: "center" ,
+              justifyContent: "center",
               flexWrap: "wrap",
               paddingBottom: "15px",
             }}
@@ -120,9 +120,7 @@ function ChooseUs() {
             <img src="./assets/images/img1.png" height="80%" width="auto" />
           </Grid>
 
-          <Grid item md={5}
-          sx={{display:"flex",alignItems:"center"}}
-          >
+          <Grid item md={5} sx={{ display: "flex", alignItems: "center" }}>
             <Box
               className={`h-line-dashed ${index % 2 == 0 ? "right" : "left"}`}
               style={{
@@ -144,7 +142,7 @@ function ChooseUs() {
               }}
             >
               <Grid item xs={2} md={2}>
-                <Box className="number"  >
+                <Box className="number">
                   <Typography
                     sx={{
                       color: "#fff",
@@ -166,12 +164,13 @@ function ChooseUs() {
               <Grid item xs={10} md={9}>
                 <Box sx={{ float: "right", display: "block" }}>
                   <Typography
-                    variant="h4"
                     mb={1}
                     className="heading"
                     fontWeight={"500"}
                     color="black"
                     style={{ fontSize: matches ? "4vw" : "2.2vw" }}
+                    // variant="h6"
+                    // component="div"
                   >
                     {item.title}
                   </Typography>
@@ -182,6 +181,9 @@ function ChooseUs() {
                       fontSize: matches ? "3.3vw" : "1.4vw",
                       opacity: 0.6,
                     }}
+
+                    // variant="body2"
+                    // color="text.secondary"
                   >
                     {item.description}
                   </Typography>

@@ -1,11 +1,8 @@
-
-
-
-.Minegrid{
+.Minegrid {
     background-color: rgb(253, 253, 253);
 }
 
-.sections{
+.sections {
     position: relative;
     flex: row;
     padding-bottom: 50px;
@@ -45,17 +42,17 @@ justify-content: center;
 text-align: center;
 }
 
-.textBox{
-position: relative;
-width: 100%;
-flex: 0 0 50%;
-padding-left: 50px;
-padding-right: 50px;
-display: block;
+.textBox {
+    position: relative;
+    width: 100%;
+    flex: 0 0 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: block;
 }
 
 
-.h-line-dashed{
+.h-line-dashed {
     background-image: url("../public/assets/images/time-line-dashed.png");
     position: absolute;
     width: 30px;
@@ -69,34 +66,35 @@ display: block;
 .left {
     right: 50%;
 }
-.content-box{
-align-items: center;
-overflow: hidden;
-box-shadow:2px 5px 20px 0 rgba(23.00000000000011, 22.000000000000007, 138.99999999999994, .08) ;
-/* border-left: 8px solid #104cba; */
+
+.content-box {
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 2px 5px 20px 0 rgba(23.00000000000011, 22.000000000000007, 138.99999999999994, .08);
+    /* border-left: 8px solid #104cba; */
 }
 
-.number{
-display: flex;
-justify-content: flex-start;
-align-items: center;
-padding: 10px;
+.number {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
 }
 
-.heading{
+.heading {
     font-weight: 600;
     color: "red";
 }
 
 /* ///////////////////////// */
-.right-content-contianer{
+.right-content-contianer {
     display: none;
 }
 
-.marginLeftPlus{
+.marginLeftPlus {
     margin-left: 30px !important;
 }
 
-.marginLeftMinus{
+.marginLeftMinus {
     margin-left: -30px !important;
 }
