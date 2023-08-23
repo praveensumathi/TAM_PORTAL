@@ -9,7 +9,7 @@
 }
 
 .top-line-line {
-    background-image: url("./assets/images/dash-img.png");
+    background-image: url("../public/assets/images/dash-img.png");
     height: 2px;
     width: 50px;
     margin-left: -25px;
@@ -18,7 +18,7 @@
 }
 
 .vertical-line {
-    background-image: url("./assets/images/time-line-dashed.png");
+    background-image: url("../public/assets/images/time-line-dashed.png");
     position: absolute;
     width: 2px;
     height: 100%;
@@ -64,7 +64,7 @@ border-color: red; */
 
 
 .h-line-dashed {
-    background-image: url("./assets/images/time-line-dashed.png");
+    background-image: url("../public/assets/images/time-line-dashed.png");
     position: absolute;
     top: 50%;
     width: 30px;
