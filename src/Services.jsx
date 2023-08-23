@@ -69,7 +69,6 @@ export default function Services() {
       <Box
         sx={{
           display: "flex",
-          justifyContent: "center",
           alignContent: "center",
           flexDirection: isSmallScreen ? "column" : "row",
           flexWrap: "wrap",

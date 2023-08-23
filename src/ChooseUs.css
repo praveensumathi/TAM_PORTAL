@@ -1,73 +1,70 @@
-
-
-
-.Minegrid{
+.Minegrid {
     background-color: rgb(253, 253, 253);
 }
 
-.sections{
+.sections {
     position: relative;
     flex: row;
     padding-bottom: 50px;
 }
 
-.top-line-line{
-background-image:url("../public/assets/images/dash-img.png") ;
-height: 2px;
-width: 50px;
-margin-left: -25px;
-/* display: block; */
-/* position: absolute; */
+.top-line-line {
+    background-image: url("./assets/images/dash-img.png");
+    height: 2px;
+    width: 50px;
+    margin-left: -25px;
+    /* display: block; */
+    /* position: absolute; */
 }
 
 .vertical-line {
-    background-image: url("../public/assets/images/time-line-dashed.png");
+    background-image: url("./assets/images/time-line-dashed.png");
     position: absolute;
     width: 2px;
     height: 100%;
     left: 50%;
 }
 
-.round{
-position: absolute;
-top: 50%;
-left: 50%;
-width: 22px;
-height: 22px;
-background-color: #fff;
-/* border-width: 6px;
+.round {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    /* border-width: 6px;
 border-style: solid;
 border-radius: 50%;
 border-color: red; */
-margin-left: -10px;
-z-index: 1;
+    margin-left: -10px;
+    z-index: 1;
 }
 
-.img-container{
-display: flex;
-position: relative;
-flex: 0 0 50%;
-justify-content: center;
-text-align: center;
-/* height: 30vh; */
-/* width: 100%; */
-/* flex-wrap: wrap; */
+.img-container {
+    display: flex;
+    position: relative;
+    flex: 0 0 50%;
+    justify-content: center;
+    text-align: center;
+    /* height: 30vh; */
+    /* width: 100%; */
+    /* flex-wrap: wrap; */
 
-/* padding-right:50px ; */
+    /* padding-right:50px ; */
 }
 
-.textBox{
-position: relative;
-width: 100%;
-flex: 0 0 50%;
-padding-left: 50px;
-padding-right: 50px;
-display: block;
+.textBox {
+    position: relative;
+    width: 100%;
+    flex: 0 0 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: block;
 }
 
 
-.h-line-dashed{
-    background-image: url("../public/assets/images/time-line-dashed.png");
+.h-line-dashed {
+    background-image: url("./assets/images/time-line-dashed.png");
     position: absolute;
     top: 50%;
     width: 30px;
@@ -82,34 +79,35 @@ display: block;
 .left {
     right: 50%;
 }
-.content-box{
-align-items: center;
-overflow: hidden;
-box-shadow:2px 5px 20px 0 rgba(23.00000000000011, 22.000000000000007, 138.99999999999994, .08) ;
-/* border-left: 8px solid #104cba; */
+
+.content-box {
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 2px 5px 20px 0 rgba(23.00000000000011, 22.000000000000007, 138.99999999999994, .08);
+    /* border-left: 8px solid #104cba; */
 }
 
-.number{
-display: flex;
-justify-content: flex-start;
-align-items: center;
-padding: 10px;
+.number {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
 }
 
-.heading{
+.heading {
     font-weight: 600;
     color: "red";
 }
 
 /* ///////////////////////// */
-.right-content-contianer{
+.right-content-contianer {
     display: none;
 }
 
-.marginLeftPlus{
+.marginLeftPlus {
     margin-left: 30px !important;
 }
 
-.marginLeftMinus{
+.marginLeftMinus {
     margin-left: -30px !important;
 }
