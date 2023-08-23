@@ -16,7 +16,6 @@ function Contactus() {
     event.preventDefault();
     console.log("Form submitted!");
   };
-
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
   const isMediumScreen = useMediaQuery(
     "(min-width: 601px) and (max-width: 960px)"
@@ -38,6 +37,7 @@ function Contactus() {
           fontWeight={"500"}
           my={2}
           textAlign="center"
+          padding="10px"
           color="white"
           fontSize={isSmallScreen ? "8vw" : "4vw"}
         >

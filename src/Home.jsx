@@ -3,7 +3,7 @@ import React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Home() {
-  const matches = useMediaQuery("(max-width:600px)");
+  const matches = useMediaQuery("(max-width:900px)");
 
   return (
     <Grid
@@ -11,12 +11,22 @@ function Home() {
       justifyContent={"center"}
       sx={{
         backgroundImage: "url(/assets/images/home.png)",
-        height: "80vh",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        xs: {
+          justifyContent: "center",
+        },
       }}
     >
-      <Grid item xs={12} sm={12} md={5} display={"flex"} alignItems={"center"}>
+      <Grid
+        item
+        xs={12}
+        sm={12}
+        md={5}
+        display={"flex"}
+        alignItems={"center"}
+        my={2}
+      >
         <Container>
           <Typography
             variant="h2"
