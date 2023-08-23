@@ -1,0 +1,11 @@
+.container{
+    /* background-color: rgb(197, 199, 201); */
+    /* height: 200px; */
+   
+}
+
+.box{
+-webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
