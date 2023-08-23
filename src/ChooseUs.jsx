@@ -51,7 +51,7 @@ function ChooseUs() {
     },
   ];
   return (
-    <Container
+    <Box
       sx={{
         mb: 3,
       }}
@@ -99,7 +99,7 @@ function ChooseUs() {
               borderRadius: "50%",
             }}
           ></Box>
-        
+
           <Grid
             item
             xs={12}
@@ -169,7 +169,10 @@ function ChooseUs() {
                   <Typography
                     className="discretion"
                     lineHeight={1}
-                    style={{ fontSize: matches ? "3.3vw" : "1.4vw" }}
+                    style={{
+                      fontSize: matches ? "3.3vw" : "1.4vw",
+                      opacity: 0.6,
+                    }}
                   >
                     {item.description}
                   </Typography>
@@ -192,7 +195,7 @@ function ChooseUs() {
           </Grid>
         </Grid>
       ))}
-    </Container>
+    </Box>
   );
 }
 

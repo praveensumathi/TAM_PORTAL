@@ -30,7 +30,7 @@ margin-left: -25px;
 
 .round{
 position: absolute;
-top: 100px;
+top: 50%;
 left: 50%;
 width: 22px;
 height: 22px;
@@ -69,9 +69,10 @@ display: block;
 .h-line-dashed{
     background-image: url("../public/assets/images/time-line-dashed.png");
     position: absolute;
-    top: 109Px;
+    top: 50%;
     width: 30px;
     height: 2px;
+    margin-top: 10px;
 }
 
 .right {
