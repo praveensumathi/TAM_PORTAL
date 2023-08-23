@@ -10,36 +10,52 @@ function ChooseUs() {
 
   const whyChooseUS = [
     {
-      title: "Test",
-      description: "some description",
+      title: "Expertise Meets Innovation:",
+      description:
+        "  Our seasoned experts blend creativity with technical prowess to craft solutions that stand out in today's competitive digital landscape.",
       imgUrl: "./assets/images/img1.png",
       id: 1,
       color: "#30077d",
     },
     {
-      title: "Test",
-      description: "some description",
+      title: "Global Reach:",
+      description:
+        "  With offices in India and the USA, [Company Name] brings diverse perspectives and cultural insights to every project, ensuring a global touch to your solutions.",
       imgUrl: "./assets/images/img1.png",
       id: 2,
       color: "red",
     },
     {
-      title: "Test",
-      description: "some description",
+      title: "Customized Solutions:",
+      description:
+        "We tailor our services to match your unique goals, working closely with you to deliver solutions that align with your vision.",
       imgUrl: "./assets/images/img1.png",
       id: 3,
       color: "green",
     },
     {
-      title: "Test",
-      description: "some description",
+      title: "Agile Approach:",
+      description:
+        "  Our Agile development methodology ensures rapid iterations, continuous collaboration, and flexible solutions that evolve with your needs.",
       imgUrl: "./assets/images/img1.png",
       id: 4,
       color: "rgb(12,9,121)",
     },
+    {
+      title: "Unwavering Quality:",
+      description:
+        " Quality is at the core of everything we do. We are committed to delivering solutions that are robust, secure, and user-centric.",
+      imgUrl: "./assets/images/img1.png",
+      id: 5,
+      color: "rgb(12,9,121)",
+    },
   ];
   return (
-    <Container>
+    <Container
+      sx={{
+        mb: 3,
+      }}
+    >
       <Typography
         variant="h3"
         fontWeight={"500"}
@@ -47,7 +63,7 @@ function ChooseUs() {
         fontSize={matches ? "8vw" : "4vw"}
         sx={{ display: "flex", justifyContent: "center" }}
       >
-        Why Choose TamTree
+        Why Choose Us
       </Typography>
 
       <Box
@@ -63,6 +79,7 @@ function ChooseUs() {
         <Grid
           position={"relative"}
           container
+          py={3}
           style={{
             display: "flex",
             marginBottom: matches ? "50px" : "0px",
@@ -82,7 +99,7 @@ function ChooseUs() {
               borderRadius: "50%",
             }}
           ></Box>
-          {/* </Grid> */}
+        
           <Grid
             item
             xs={12}
@@ -147,15 +164,14 @@ function ChooseUs() {
                     color="black"
                     style={{ fontSize: matches ? "4vw" : "2.2vw" }}
                   >
-                    Business Collaboration
+                    {item.title}
                   </Typography>
                   <Typography
                     className="discretion"
                     lineHeight={1}
-                    style={{ fontSize: matches ? "2.8vw" : "1.4vw" }}
+                    style={{ fontSize: matches ? "3.3vw" : "1.4vw" }}
                   >
-                    Generators on the Internet tend to repeat predefined chunks
-                    as necessary
+                    {item.description}
                   </Typography>
                 </Box>
               </Grid>
