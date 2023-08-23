@@ -13,6 +13,9 @@ import Home from "./Home";
 import Services from "./Services";
 import Contactus from "./Contactus";
 import About from "./About";
+import ChooseUs from "./ChooseUs";
+import Technology from "./Technology";
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -28,9 +31,16 @@ function App() {
       <Navbar />
       <Box component="main">
         <Toolbar />
-        <Home/>
+
+        <Box>
+          <Home />
+        </Box>
         <About />
         <Services />
+        <ChooseUs />
+        <Box my={3}>
+          <Technology />
+        </Box>
         <Contactus />
       </Box>
     </ThemeProvider>
