@@ -8,13 +8,12 @@
     padding-bottom: 50px;
 }
 
-.top-line-line {
-    background-image: url("../public/assets/images/dash-img.png");
-    height: 2px;
-    width: 50px;
-    margin-left: -25px;
-    /* display: block; */
-    /* position: absolute; */
+.top-line-line{
+background-image:url("../public/assets/images/dash-img.png") ;
+height: 2px;
+width: 50px;
+margin-left: -25px;
+margin-bottom: 8px;
 }
 
 .vertical-line {
@@ -25,32 +24,22 @@
     left: 50%;
 }
 
-.round {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 22px;
-    height: 22px;
-    background-color: #fff;
-    /* border-width: 6px;
-border-style: solid;
-border-radius: 50%;
-border-color: red; */
-    margin-left: -10px;
-    z-index: 1;
+.round{
+position: absolute;
+left: 50%;
+width: 22px;
+height: 22px;
+background-color: #fff;
+margin-left: -10px;
+z-index: 1;
 }
 
-.img-container {
-    display: flex;
-    position: relative;
-    flex: 0 0 50%;
-    justify-content: center;
-    text-align: center;
-    /* height: 30vh; */
-    /* width: 100%; */
-    /* flex-wrap: wrap; */
-
-    /* padding-right:50px ; */
+.img-container{
+display: flex;
+position: relative;
+flex: 0 0 50%;
+justify-content: center;
+text-align: center;
 }
 
 .textBox {
@@ -66,10 +55,8 @@ border-color: red; */
 .h-line-dashed {
     background-image: url("../public/assets/images/time-line-dashed.png");
     position: absolute;
-    top: 50%;
     width: 30px;
     height: 2px;
-    margin-top: 10px;
 }
 
 .right {
