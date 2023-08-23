@@ -53,6 +53,7 @@ function ChooseUs() {
   return (
     <Box
       sx={{
+        px:3,
         mb: 3,
       }}
     >
@@ -79,7 +80,6 @@ function ChooseUs() {
         <Grid
           position={"relative"}
           container
-          py={3}
           style={{
             display: "flex",
             marginBottom: matches ? "50px" : "0px",
