@@ -10,7 +10,7 @@ function Home() {
       container
       justifyContent={"center"}
       sx={{
-        backgroundImage: "url(/assets/images/home.png)",
+        backgroundImage: "url(./assets/images/home.png)",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
