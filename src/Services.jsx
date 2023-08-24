@@ -42,7 +42,7 @@ export default function Services() {
       img: "./assets/images/Technology_Staffing.png", 
       title: "Technology Staffing",
       description:
-        "Tam Tree understands that the right team makes all the difference. We offer top-tier staffing solutions for a variety of roles, including fullstack developers, as well as SAP and PeopleSoft professionals. Fulfill your workforce needs across various technologies with our curated talent pool.",
+        "TamTree understands that the right team makes all the difference. We offer top-tier staffing solutions for a variety of roles, including fullstack developers, as well as SAP and PeopleSoft professionals. Fulfill your workforce needs across various technologies with our curated talent pool.",
     },
   ];
 
@@ -75,6 +75,7 @@ export default function Services() {
           gap: 5,
           margin: "auto",
           padding: "15px",
+          
           justifyContent:
             isSmallScreen || isMediumScreen ? "center" : "flex-start",
         }}
@@ -104,7 +105,6 @@ export default function Services() {
             >
               <CardMedia
                 component="img"
-                // height="200px"
                 image={item.img}
                 alt="green iguana"
                 sx={{

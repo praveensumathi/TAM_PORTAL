@@ -1,4 +1,7 @@
-import { useState } from "react";
+
+
+
+import React, { useState } from "react";
 import "./App.css";
 import {
   Box,
@@ -32,16 +35,27 @@ function App() {
       <Box component="main">
         <Toolbar />
 
-        <Box>
+        <section id="home">
           <Home />
-        </Box>
-        <About />
-        <Services />
-        <ChooseUs />
-        <Box my={3}>
-          <Technology />
-        </Box>
-        <Contactus />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="services">
+          <Services />
+        </section>
+        <section id="chooseus">
+          <ChooseUs />
+        </section>
+     
+          <section id="technology">
+             <Box my={3}>
+            <Technology />
+             </Box>
+          </section>
+        <section id="contactus">
+          <Contactus />
+        </section>
       </Box>
     </ThemeProvider>
   );

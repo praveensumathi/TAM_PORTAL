@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   AppBar,
   Box,
@@ -11,17 +12,13 @@ import {
   ListItemText,
   Drawer,
 } from "@mui/material";
-import React from "react";
-import { useState } from "react";
-
 import MenuIcon from "@mui/icons-material/Menu";
-
 import CloseIcon from "@mui/icons-material/Close";
-const drawerWidth = 1000;
+
 const navItems = [
-  { label: " Home" },
-  { label: "Services" },
-  { label: "Contact us" },
+  { label: " Home", id: "home" },
+  { label: "Services", id: "services" },
+  { label: "Contact us", id: "contactus" },
 ];
 
 export default function Navbar() {
@@ -59,18 +56,22 @@ export default function Navbar() {
             <List sx={{ display: "flex" }}>
               {navItems.map((item) => (
                 <ListItemText
+                  key={item.label}
                   primary={
-                    <Typography
-                      variant="body1"
-                      sx={{
+                    <a
+                      href={`#${item.id}`}
+                      style={{
+                        textDecoration: "none",
                         color: "white",
                         fontSize: "20px",
                         marginLeft: "20px",
                         marginRight: "10px",
+                        cursor: "pointer",
                       }}
+                      onClick={handleDrawerClose}
                     >
-                      {item.label}
-                    </Typography>
+                      {item.label.trim()}
+                    </a>
                   }
                 />
               ))}
@@ -95,13 +96,23 @@ export default function Navbar() {
           <List>
             {navItems.map((item) => (
               <ListItemText
-                primary={item.label}
-                sx={{
-                  color: "#7942d4",
-                  padding: "5px",
-                  marginLeft: "20px",
-                  marginRight: "10px",
-                }}
+                key={item.label}
+                primary={
+                  <a
+                    href={`#${item.id}`}
+                    style={{
+                      textDecoration: "none",
+                      color: "#7942d4",
+                      fontSize: "20px",
+                      marginLeft: "20px",
+                      marginRight: "10px",
+                      cursor: "pointer",
+                    }}
+                    onClick={handleDrawerClose}
+                  >
+                    {item.label.trim()}
+                  </a>
+                }
               />
             ))}
           </List>

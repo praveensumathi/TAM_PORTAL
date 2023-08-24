@@ -12,7 +12,7 @@ function ChooseUs() {
     {
       title: "Global Reach",
       description:
-        "  With offices in India and the USA, Tamtree brings diverse perspectives and cultural insights to every project, ensuring a global touch to your solutions.",
+        "  With offices in India and the USA, TamTree brings diverse perspectives and cultural insights to every project, ensuring a global touch to your solutions.",
       imgUrl: "./assets/images/Global_Reach.png",
       id: 1,
       color: "linear-gradient(to right,#ff3834 0%,#ff7133 100%)",
