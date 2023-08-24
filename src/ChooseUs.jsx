@@ -40,7 +40,7 @@ function ChooseUs() {
       title: "Unwavering Quality",
       description:
         " Quality is at the core of everything we do. We are committed to delivering solutions that are robust, secure, and user-centric.",
-      imgUrl: "./assets/images/Unwavering_Quality.png", //      imgUrl: "./assets/images/publicassetsimagesUnwavering_Quality.png",
+      imgUrl: "./assets/images/Unwavering_Quality.png", 
       id: 4,
       color: "linear-gradient(to right,#ff3834 0%,#ff7133 100%)",
       border_color: "#fe6232",
@@ -141,7 +141,6 @@ function ChooseUs() {
               }}
             >
               <Grid item xs={2} md={2} p>
-                {/* <Box className="number"> */}
                 <Typography
                   sx={{
                     color: "#fff",
@@ -160,33 +159,29 @@ function ChooseUs() {
                 >
                   {"0" + (index + 1)}
                 </Typography>
-                {/* </Box> */}
+               
               </Grid>
               <Grid item xs={10} md={9}>
                 <Box sx={{ float: "right", display: "block" }}>
                   <Typography
                     mb={1}
                     className="heading"
-                    // fontWeight={"500"}
-                    // color="black"
-                    // style={{ fontSize: matches ? "4vw" : "2.2vw" }}
+                    fontWeight={"500"}
+                    color="black"
+                    style={{ fontSize: matches ? "4vw" : "2.2vw" }}
                     lineHeight={1}
-                    fontSize={24}
-                    variant="h6"
-                    component="div"
+                   
                   >
                     {item.title}
                   </Typography>
                   <Typography
                     className="discretion"
                     lineHeight={1}
-                    // style={{
-                    //   fontSize: matches ? "3.3vw" : "1.4vw",
-                    //   opacity: 0.6,
-                    // }}
-                    fontSize={16}
-                    variant="body2"
-                    color="text.secondary"
+                    style={{
+                      fontSize: matches ? "3.3vw" : "1.4vw",
+                      opacity: 0.6,
+                    }}
+                    
                   >
                     {item.description}
                   </Typography>
