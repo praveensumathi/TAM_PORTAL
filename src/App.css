@@ -88,12 +88,12 @@ p {
   padding: 0;
 }
 .text {
-  color: #fff;
-  text-transform: uppercase;
+  color: #ffffff;
+  /* text-transform: uppercase; */
   text-decoration: none;
-  letter-spacing: 0.15em;
+  /* letter-spacing: 0.15em; */
   display: inline-block;
-  padding: 15px 20px;
+  padding: 10px 10px;
   position: relative;
 }
 
@@ -103,7 +103,8 @@ p {
   bottom: 5px;
   left: 50%;
   display: block;
-  background: none repeat scroll 0 0 transparent;
+
+  background:"white";
   height: 2px;
   width: 0;
   background: #fff;
@@ -116,10 +117,10 @@ p {
 }
 
 .text:hover {
-  /* color: linear-gradient( #f69ec4, #f9dd94 ); */
-  background: linear-gradient(45deg, #eae8e8, #e5e3e3);
+
+  background: linear-gradient(45deg, white, white);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white;
   cursor: pointer;
 }
 

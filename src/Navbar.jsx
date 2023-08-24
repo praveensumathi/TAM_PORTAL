@@ -40,7 +40,7 @@ export default function Navbar() {
             variant="h6"
             sx={{ display: "flex", alignItems: "center" }}
           >
-            TAM TREE
+            TAMTREE
           </Typography>
           {matches ? (
             <IconButton
