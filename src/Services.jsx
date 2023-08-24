@@ -76,8 +76,8 @@ export default function Services() {
           gap: 5,
           margin: "auto",
           padding: "15px",
-          justifyContent: isSmallScreen ? "center" : "flex-start",
-          justifyContent: isMediumScreen ? "center" : "flex-start",
+          // justifyContent: isSmallScreen ? "center" : "flex-start",
+          // justifyContent: isMediumScreen ? "center" : "flex-start",
         }}
       >
         {image2.map((item, index) => (

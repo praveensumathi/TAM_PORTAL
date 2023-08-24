@@ -75,10 +75,14 @@ function Contactus() {
                 <Grid item>
                   <Box>
                     <LocationOnIcon sx={{ color: "white" }} />
-                    <Typography variant="body1" color="#FB2576">
+                    <Typography variant="body1" fontSize="20px" color="#FB2576">
                       India Office:
                     </Typography>
-                    <Typography variant="body2" sx={{ color: "white" }}>
+                    <Typography
+                      variant="body2"
+                      fontSize="18px"
+                      sx={{ color: "white" }}
+                    >
                       <p> 1/62 kilsathambur</p>
                       <p>Namakkal </p>
                       <p>Tamilnadu</p>
@@ -92,10 +96,14 @@ function Contactus() {
                   <Box>
                     <LocationOnIcon sx={{ color: "white" }} />
 
-                    <Typography variant="body1" color="#FB2576">
+                    <Typography variant="body1" fontSize="20px" color="#FB2576">
                       USA Office:
                     </Typography>
-                    <Typography variant="body2" sx={{ color: "white" }}>
+                    <Typography
+                      variant="body2"
+                      fontSize="18px"
+                      sx={{ color: "white" }}
+                    >
                       <p>5900 Blcones Drive</p>
                       <p>STE 100 Austin,TX 78731</p>
                       <p>Phone:+1(972) 523-2289</p>
@@ -105,11 +113,15 @@ function Contactus() {
                 <Grid item>
                   <Box>
                     <WebIcon sx={{ color: "white" }} />
-                    <Typography variant="body1" color="#FB2576">
+                    <Typography variant="body1" fontSize="20px" color="#FB2576">
                       Website
                     </Typography>
 
-                    <Typography variant="body2" sx={{ color: "white" }}>
+                    <Typography
+                      variant="body2"
+                      fontSize="18px"
+                      sx={{ color: "white" }}
+                    >
                       <p>tamtreellc.com</p>
                     </Typography>
                   </Box>

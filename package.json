@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"https://praveensumathi.github.io/TAM_PORTAL/",
+  "homepage": "https://praveensumathi.github.io/TAM_PORTAL/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -20,7 +20,8 @@
     "@mui/material": "^5.14.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-fast-marquee": "^1.6.0"
+    "react-fast-marquee": "^1.6.0",
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
