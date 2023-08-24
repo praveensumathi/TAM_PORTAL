@@ -47,11 +47,12 @@ function App() {
         <section id="chooseus">
           <ChooseUs />
         </section>
-        <Box my={3}>
+     
           <section id="technology">
+             <Box my={3}>
             <Technology />
+             </Box>
           </section>
-        </Box>
         <section id="contactus">
           <Contactus />
         </section>
