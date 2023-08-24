@@ -15,7 +15,7 @@ export default function Services() {
     {
       className: "card1",
       id: 1,
-      img: "./assets/images/homevector.png",
+      img: "./assets/images/Web_Development.png", 
       title: "Web and Mobile App Development",
       description:
         "Our expert team of developers, designers, and architects collaborates to create seamless, user-friendly web and mobile applications. From concept to deployment, we leverage the latest fullstack technologies to build solutions that meet your unique business requirements.",
@@ -23,7 +23,7 @@ export default function Services() {
     {
       className: "card2",
       id: 2,
-      img: "./assets/images/homevector.png",
+      img: "./assets/images/Fullstack_Expertise.png", 
       title: "Fullstack Expertise",
       description:
         "   With proficiency in both frontend and backend technologies, we provide holistic fullstack development services. Our teams excel in utilizing frameworks, databases, and languages to craft powerful, dynamic applications that drive growth and innovation.",
@@ -31,7 +31,7 @@ export default function Services() {
     {
       className: "card3",
       id: 3,
-      img: "./assets/images/homevector.png",
+      img: "./assets/images/PeopleSoft.png", 
       title: "SAP and PeopleSoft  Training",
       description:
         "   Unlock the potential of SAP and PeopleSoft with our comprehensive training programs. Our experienced trainers provide hands-on learning experiences that empower individuals and teams to harness the power of these enterprise solutions effectively.",
@@ -39,10 +39,10 @@ export default function Services() {
     {
       className: "card4",
       id: 4,
-      img: "./assets/images/homevector.png",
+      img: "./assets/images/Technology_Staffing.png", 
       title: "Technology Staffing",
       description:
-        "Tam Tree understands that the right team makes all the difference. We offer top-tier staffing solutions for a variety of roles, including fullstack developers, as well as SAP and PeopleSoft professionals. Fulfill your workforce needs across various technologies with our curated talent pool.",
+        "TamTree understands that the right team makes all the difference. We offer top-tier staffing solutions for a variety of roles, including fullstack developers, as well as SAP and PeopleSoft professionals. Fulfill your workforce needs across various technologies with our curated talent pool.",
     },
   ];
 
@@ -69,7 +69,6 @@ export default function Services() {
       <Box
         sx={{
           display: "flex",
-          justifyContent: "center",
           alignContent: "center",
           flexDirection: isSmallScreen ? "column" : "row",
           flexWrap: "wrap",
@@ -77,6 +76,8 @@ export default function Services() {
           margin: "auto",
           padding: "15px",
           
+          justifyContent:
+            isSmallScreen || isMediumScreen ? "center" : "flex-start",
         }}
       >
         {image2.map((item, index) => (
@@ -89,7 +90,7 @@ export default function Services() {
               maxWidth: "300px",
               height: "auto",
               boxShadow: "none",
-
+              paddingTop:"10px",
               "&:hover": {
                 cursor: "pointer",
                 boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.2)",
@@ -107,7 +108,7 @@ export default function Services() {
                 image={item.img}
                 alt="green iguana"
                 sx={{
-                  width: "50%",
+                  width: "70%",
                   height: "auto",
                   display: "block",
                   margin: "auto",
@@ -117,6 +118,7 @@ export default function Services() {
                 <Typography
                   gutterBottom
                   variant="h6"
+                  fontSize={24}
                   component="div"
                   align="center"
                 >
@@ -125,6 +127,7 @@ export default function Services() {
 
                 <Typography
                   variant="body2"
+                  fontSize={16}
                   color="text.secondary"
                   align="center"
                 >
