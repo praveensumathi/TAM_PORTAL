@@ -87,3 +87,42 @@ p {
   margin: 0;
   padding: 0;
 }
+.text {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.text::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.text:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.text:hover {
+  /* color: linear-gradient( #f69ec4, #f9dd94 ); */
+  background: linear-gradient(45deg, #eae8e8, #e5e3e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.text:hover {
+  color: whitesmoke;
+}

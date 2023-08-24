@@ -60,6 +60,7 @@ export default function Navbar() {
                   primary={
                     <a
                       href={`#${item.id}`}
+                      className="text"
                       style={{
                         textDecoration: "none",
                         color: "white",
@@ -67,6 +68,7 @@ export default function Navbar() {
                         marginLeft: "20px",
                         marginRight: "10px",
                         cursor: "pointer",
+                        
                       }}
                       onClick={handleDrawerClose}
                     >
