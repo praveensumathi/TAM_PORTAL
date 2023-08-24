@@ -76,8 +76,7 @@ export default function Services() {
           gap: 5,
           margin: "auto",
           padding: "15px",
-          // justifyContent: isSmallScreen ? "center" : "flex-start",
-          // justifyContent: isMediumScreen ? "center" : "flex-start",
+          
         }}
       >
         {image2.map((item, index) => (
@@ -105,7 +104,6 @@ export default function Services() {
             >
               <CardMedia
                 component="img"
-                // height="200px"
                 image={item.img}
                 alt="green iguana"
                 sx={{

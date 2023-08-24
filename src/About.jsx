@@ -26,8 +26,8 @@ function About() {
           </Typography>
           <Typography
             variant="h6"
-            
-            sx={{ textAlign: "center", fontSize:"20px", opacity: 0.8 }}
+            fontSize={matches ? "5vw" : "2vw"}
+            sx={{ textAlign: "center", opacity: 0.8 }}
           >
             At TamTree, we are a dynamic technology solutions provider
             specializing in a range of services that cater to your digital

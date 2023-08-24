@@ -75,7 +75,7 @@ function Contactus() {
                 <Grid item>
                   <Box>
                     <LocationOnIcon sx={{ color: "white" }} />
-                    <Typography variant="body1" fontSize="20px" color="#FB2576">
+                    <Typography variant="body1" fontSize="20px" color="#FB2576" sx={{textDecoration:"underline"  ,textDecorationThickness:"2px"}}>
                       India Office:
                     </Typography>
                     <Typography
