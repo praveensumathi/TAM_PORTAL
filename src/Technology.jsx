@@ -28,25 +28,21 @@ function Technology() {
       img: "./assets/images/net.png",
     },
     {
-      title: ".Node",
+      title: "Node",
       img: "./assets/images/node.png",
     },
     {
-      title: ".React Native",
+      title: "React Native",
       img: "./assets/images/react native.png",
     },
     {
-      title: ".Angular",
+      title: "Angular",
       img: "./assets/images/angular.png",
     },
   ];
 
   return (
-    <Container
-      className="container"
-      my={3}
-      
-    >
+    <Container className="container" my={3}>
       <Typography
         variant="h3"
         fontWeight={"500"}
@@ -56,9 +52,11 @@ function Technology() {
       >
         Technologies
       </Typography>
-      <Box style={{
-        opacity: 0.6,
-      }}>
+      <Box
+        style={{
+          opacity: 0.6,
+        }}
+      >
         <Marquee>
           <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
             {Technologys.map((item) => (

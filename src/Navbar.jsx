@@ -18,7 +18,7 @@ import CloseIcon from "@mui/icons-material/Close";
 const navItems = [
   { label: " Home", id: "home" },
   { label: "Services", id: "services" },
-  { label: "Contact us", id: "contactus" },
+  { label: "Contact Us", id: "contactus" },
 ];
 
 export default function Navbar() {
@@ -40,7 +40,7 @@ export default function Navbar() {
             variant="h6"
             sx={{ display: "flex", alignItems: "center" }}
           >
-            TAM TREE
+            TAMTREE
           </Typography>
           {matches ? (
             <IconButton
