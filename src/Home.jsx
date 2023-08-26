@@ -1,13 +1,9 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React, { useEffect } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Home() {
-  // useEffect(() => {
-  //   AOS.init();
-  // }, []);
 
   const matches = useMediaQuery("(max-width:900px)");
 
