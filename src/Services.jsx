@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import { Box, Container } from "@mui/material";
 import "./App.css";
 import { useMediaQuery } from "@mui/material";
+
 export default function Services() {
   const isSmallScreen = useMediaQuery("(max-width: 600px)");
   const isMediumScreen = useMediaQuery(
@@ -47,11 +48,7 @@ export default function Services() {
   ];
 
   return (
-    <Box
-      sx={{ marginBottom: "15px", padding: "30px", height: "100%" }}
-      data-aos="fade-left"
-      data-aos-duration="2000"
-    >
+    <Box sx={{ marginBottom: "15px", padding: "30px", height: "100%" }}>
       <Typography
         variant="h3"
         fontWeight={"500"}
@@ -90,7 +87,7 @@ export default function Services() {
               maxWidth: "300px",
               height: "auto",
               boxShadow: "none",
-              paddingTop:"10px",
+              paddingTop: "10px",
               "&:hover": {
                 cursor: "pointer",
                 boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.2)",

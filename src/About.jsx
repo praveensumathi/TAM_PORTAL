@@ -5,23 +5,23 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 function About() {
     const matches = useMediaQuery("(max-width:600px)");
-    return (
+  return (
       <Box>
-        <Container
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            minHeight: "30vh",
-          }}
+      <Container
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          minHeight: "30vh",
+        }}
+      >
+        <Typography
+          variant="h3"
+          fontWeight={"500"}
+          my={2}
+          fontSize={matches ? "8vw" : "4vw"}
         >
-          <Typography
-            variant="h3"
-            fontWeight={"500"}
-            my={2}
-            fontSize={matches ? "8vw" : "4vw"}
-          >
             About Us
           </Typography>
           <Typography

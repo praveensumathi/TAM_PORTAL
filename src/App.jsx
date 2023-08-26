@@ -47,7 +47,6 @@ function App() {
         <section id="chooseus">
           <ChooseUs />
         </section>
-     
           <section id="technology">
              <Box my={3}>
             <Technology />
