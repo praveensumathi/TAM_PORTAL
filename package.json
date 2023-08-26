@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"https://praveensumathi.github.io/TAM_PORTAL/",
+  "homepage": "https://praveensumathi.github.io/TAM_PORTAL/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

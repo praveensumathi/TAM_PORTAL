@@ -35,9 +35,15 @@ function App() {
         <Box>
           <Home />
         </Box>
-        <About />
-        <Services />
-        <ChooseUs />
+        <Box>
+          <About />
+        </Box>
+        <Box >
+          <Services />
+        </Box>
+        <Box>
+          <ChooseUs />
+        </Box>
         <Box my={3}>
           <Technology />
         </Box>

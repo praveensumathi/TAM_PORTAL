@@ -11,7 +11,9 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import WebIcon from "@mui/icons-material/Web";
 import { useMediaQuery } from "@mui/material";
 
+
 function Contactus() {
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("Form submitted!");
@@ -40,6 +42,7 @@ function Contactus() {
           padding="10px"
           color="white"
           fontSize={isSmallScreen ? "8vw" : "4vw"}
+        
         >
           Contact Us
         </Typography>
