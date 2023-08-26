@@ -4,11 +4,9 @@ import React, { useEffect } from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Home() {
-
   const matches = useMediaQuery("(max-width:900px)");
 
   return (
-   
     <Grid
       container
       justifyContent={"center"}
@@ -21,8 +19,6 @@ function Home() {
         },
       }}
     >
-    
-      
       <Grid item xs={12} sm={12} md={6} display={"flex"} alignItems={"center"}>
         <Container>
           <Typography
@@ -44,7 +40,8 @@ function Home() {
             style={{
               opacity: 0.8,
             }}
-           aoa fontSize={matches ? "5vw" : "2vw"}
+            aoa
+            fontSize={matches ? "5vw" : "2vw"}
             lineHeight={1}
             data-aos="fade-up"
             data-aos-easing="ease-out-cubic"
@@ -71,10 +68,8 @@ function Home() {
             height: "auto",
           }}
         />
-        </Grid>
-        
       </Grid>
-  
+    </Grid>
   );
 }
 

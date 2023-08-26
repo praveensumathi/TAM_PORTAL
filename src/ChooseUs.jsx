@@ -40,7 +40,7 @@ function ChooseUs() {
       title: "Unwavering Quality",
       description:
         " Quality is at the core of everything we do. We are committed to delivering solutions that are robust, secure, and user-centric.",
-      imgUrl: "./assets/images/Unwavering_Quality.png", 
+      imgUrl: "./assets/images/Unwavering_Quality.png",
       id: 4,
       color: "linear-gradient(to right,#ff3834 0%,#ff7133 100%)",
       border_color: "#fe6232",
@@ -69,7 +69,7 @@ function ChooseUs() {
         fontSize={matches ? "8vw" : "4vw"}
         sx={{ display: "flex", justifyContent: "center" }}
       >
-        Why Choose us
+        Why Choose Us
       </Typography>
 
       <Box
@@ -116,12 +116,11 @@ function ChooseUs() {
               paddingBottom: "15px",
             }}
           >
-            <Box
-            >
+            <Box className="img-container">
               <img
                 src={item.imgUrl}
                 height="auto"
-                width={matches ? "70%" : "50%"}
+                width={matches ? "50%" : "80%"}
               />
             </Box>
           </Grid>
