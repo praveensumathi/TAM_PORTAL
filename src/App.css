@@ -87,3 +87,43 @@ p {
   margin: 0;
   padding: 0;
 }
+
+.text {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  display: inline-block;
+  padding: 10px 10px;
+  position: relative;
+}
+
+.text::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  display: block;
+  background: "white";
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.text:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.text:hover {
+
+  background: linear-gradient(45deg, white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  cursor: pointer;
+}
+
+.text:hover {
+  color: rgb(245, 245, 245);
+}
