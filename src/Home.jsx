@@ -1,8 +1,10 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
+
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Home() {
+
   const matches = useMediaQuery("(max-width:900px)");
 
   return (
@@ -29,6 +31,9 @@ function Home() {
             fontWeight={"600"}
             color={"white"}
             my={1}
+            data-aos="fade-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
           >
             Welcome to TamTree,
           </Typography>
@@ -39,8 +44,11 @@ function Home() {
             style={{
               opacity: 0.8,
             }}
-            fontSize={matches ? "5vw" : "2vw"}
+           aoa fontSize={matches ? "5vw" : "2vw"}
             lineHeight={1}
+            data-aos="fade-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
           >
             Your Partner in Innovation and Transformation!
           </Typography>

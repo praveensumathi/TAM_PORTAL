@@ -8,34 +8,36 @@ function Technology() {
 
   const Technologys = [
     {
-      id: 1,
-      title: "HTML",
-      img: "./assets/images/html.png",
-    },
-    {
-      id: 2,
-      title: "CSS",
-      img: "./assets/images/css.jpeg",
-    },
-    {
-      id: 1,
-      title: "java Script",
-      img: "./assets/images/html.png",
-    },
-    {
-      id: 1,
       title: "React",
       img: "./assets/images/react.png",
     },
     {
-      id: 1,
       title: "MongoDB",
       img: "./assets/images/mongodb2.png",
     },
     {
-      id: 1,
       title: "SQL",
       img: "./assets/images/sql.png",
+    },
+    {
+      title: "Webflow",
+      img: "./assets/images/webflow.png",
+    },
+    {
+      title: ".Net",
+      img: "./assets/images/net.png",
+    },
+    {
+      title: ".Node",
+      img: "./assets/images/node.png",
+    },
+    {
+      title: ".React Native",
+      img: "./assets/images/react native.png",
+    },
+    {
+      title: ".Angular",
+      img: "./assets/images/angular.png",
     },
   ];
 
@@ -71,7 +73,6 @@ function Technology() {
                 <img
                   src={item.img}
                   style={{
-                    // objectFit: "contain",
                     width: "25%",
                     height: "auto",
                   }}

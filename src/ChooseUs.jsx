@@ -116,7 +116,14 @@ function ChooseUs() {
               paddingBottom: "15px",
             }}
           >
-            <img src={item.imgUrl} height="auto" width={matches?"70%":"50%"} />
+            <Box
+            >
+              <img
+                src={item.imgUrl}
+                height="auto"
+                width={matches ? "70%" : "50%"}
+              />
+            </Box>
           </Grid>
 
           <Grid item md={5} sx={{ display: "flex", alignItems: "center" }}>
@@ -159,7 +166,6 @@ function ChooseUs() {
                 >
                   {"0" + (index + 1)}
                 </Typography>
-               
               </Grid>
               <Grid item xs={10} md={9}>
                 <Box sx={{ float: "right", display: "block" }}>
@@ -170,7 +176,6 @@ function ChooseUs() {
                     color="black"
                     style={{ fontSize: matches ? "4vw" : "2.2vw" }}
                     lineHeight={1}
-                   
                   >
                     {item.title}
                   </Typography>
@@ -181,7 +186,6 @@ function ChooseUs() {
                       fontSize: matches ? "3.3vw" : "1.4vw",
                       opacity: 0.6,
                     }}
-                    
                   >
                     {item.description}
                   </Typography>
