@@ -23,6 +23,8 @@ const navItems = [
 
 export default function Navbar() {
   const matches = useMediaQuery("(max-width: 600px)");
+  const matches2 = useMediaQuery("(max-width: 1300px)");
+
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const handleDrawerOpen = () => {
@@ -38,6 +40,8 @@ export default function Navbar() {
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <Typography
             variant="h6"
+            fontSize={matches ? "5vw" : matches2 ? "3vw" : "2vw"}
+            fontWeight={"600"}
             sx={{ display: "flex", alignItems: "center" }}
           >
             TAMTREE
@@ -61,14 +65,14 @@ export default function Navbar() {
                     <a
                       href={`#${item.id}`}
                       className="text"
+                      // fontSize={matches ? "2.5vw" : matches2 ? "1.5vw" : "1vw"}
                       style={{
                         textDecoration: "none",
                         color: "white",
-                        fontSize: "20px",
+                        fontSize: matches2 ? "2vw" : "1.5vw",
                         marginLeft: "20px",
                         marginRight: "10px",
                         cursor: "pointer",
-                        
                       }}
                       onClick={handleDrawerClose}
                     >
