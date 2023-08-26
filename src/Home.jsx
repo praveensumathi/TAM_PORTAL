@@ -8,6 +8,7 @@ function Home() {
   const matches = useMediaQuery("(max-width:900px)");
 
   return (
+   
     <Grid
       container
       justifyContent={"center"}
@@ -20,6 +21,8 @@ function Home() {
         },
       }}
     >
+    
+      
       <Grid item xs={12} sm={12} md={6} display={"flex"} alignItems={"center"}>
         <Container>
           <Typography
@@ -68,8 +71,10 @@ function Home() {
             height: "auto",
           }}
         />
+        </Grid>
+        
       </Grid>
-    </Grid>
+  
   );
 }
 

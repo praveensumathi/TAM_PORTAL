@@ -69,7 +69,7 @@ function ChooseUs() {
         fontSize={matches ? "8vw" : "4vw"}
         sx={{ display: "flex", justifyContent: "center" }}
       >
-        Why Choose Us
+        Why Choose us
       </Typography>
 
       <Box

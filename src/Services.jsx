@@ -72,7 +72,6 @@ export default function Services() {
           gap: 5,
           margin: "auto",
           padding: "15px",
-          
           justifyContent:
             isSmallScreen || isMediumScreen ? "center" : "flex-start",
         }}
