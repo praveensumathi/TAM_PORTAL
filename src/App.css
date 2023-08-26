@@ -87,11 +87,12 @@ p {
   margin: 0;
   padding: 0;
 }
+
 .text {
   color: #ffffff;
-  /* text-transform: uppercase; */
+
   text-decoration: none;
-  /* letter-spacing: 0.15em; */
+
   display: inline-block;
   padding: 10px 10px;
   position: relative;
@@ -103,8 +104,7 @@ p {
   bottom: 5px;
   left: 50%;
   display: block;
-
-  background:"white";
+  background: "white";
   height: 2px;
   width: 0;
   background: #fff;
@@ -125,5 +125,5 @@ p {
 }
 
 .text:hover {
-  color: whitesmoke;
+  color: rgb(245, 245, 245);
 }

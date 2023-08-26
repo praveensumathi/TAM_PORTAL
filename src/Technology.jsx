@@ -52,7 +52,7 @@ function Technology() {
         fontSize={matches ? "8vw" : "4vw"}
         sx={{ display: "flex", justifyContent: "center" }}
       >
-        Technoloies
+        Technologies
       </Typography>
       <Box style={{
         opacity: 0.6,
