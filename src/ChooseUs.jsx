@@ -120,7 +120,7 @@ function ChooseUs() {
               <img
                 src={item.imgUrl}
                 height="auto"
-                width={matches ? "50%" : "80%"}
+                width={matches ? "80%" : "50%"}
               />
             </Box>
           </Grid>
