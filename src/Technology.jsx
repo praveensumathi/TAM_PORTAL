@@ -42,11 +42,7 @@ function Technology() {
   ];
 
   return (
-    <Container
-      className="container"
-      my={3}
-      
-    >
+    <Container className="container" my={3}>
       <Typography
         variant="h3"
         fontWeight={"500"}
@@ -56,9 +52,11 @@ function Technology() {
       >
         Technologies
       </Typography>
-      <Box style={{
-        opacity: 0.6,
-      }}>
+      <Box
+        style={{
+          opacity: 0.6,
+        }}
+      >
         <Marquee>
           <Box display={"flex"} alignItems={"center"} justifyContent={"center"}>
             {Technologys.map((item) => (
@@ -72,6 +70,7 @@ function Technology() {
               >
                 <img
                   src={item.img}
+                  alt={item.title}
                   style={{
                     width: "25%",
                     height: "auto",

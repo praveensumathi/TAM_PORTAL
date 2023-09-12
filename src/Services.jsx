@@ -102,7 +102,7 @@ export default function Services() {
               <CardMedia
                 component="img"
                 image={item.img}
-                alt="green iguana"
+                alt={item.title}
                 sx={{
                   width: "70%",
                   height: "auto",
