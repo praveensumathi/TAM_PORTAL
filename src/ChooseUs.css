@@ -9,7 +9,7 @@
 }
 
 .top-line-line{
-background-image:url("../public/assets/images/dash-img.png") ;
+background-image:url("assets/images/dash-img.png") ;
 height: 2px;
 width: 50px;
 margin-left: -25px;
@@ -17,7 +17,7 @@ margin-bottom: 8px;
 }
 
 .vertical-line {
-    background-image: url("../public/assets/images/time-line-dashed.png");
+    background-image: url("assets/images/time-line-dashed.png");
     position: absolute;
     width: 2px;
     height: 100%;
@@ -53,7 +53,7 @@ text-align: center;
 
 
 .h-line-dashed {
-    background-image: url("../public/assets/images/time-line-dashed.png");
+    background-image: url("assets/images/time-line-dashed.png");
     position: absolute;
     width: 30px;
     height: 2px;
@@ -68,8 +68,8 @@ text-align: center;
 }
 
 .content-box {
-    align-items: center;
-    overflow: hidden;
+    /* align-items: center;
+    overflow: hidden; */
     box-shadow: 2px 5px 20px 0 rgba(23.00000000000011, 22.000000000000007, 138.99999999999994, .08);
     /* border-left: 8px solid #104cba; */
 }
