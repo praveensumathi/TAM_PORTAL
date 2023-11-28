@@ -68,8 +68,8 @@ text-align: center;
 }
 
 .content-box {
-    align-items: center;
-    overflow: hidden;
+    /* align-items: center;
+    overflow: hidden; */
     box-shadow: 2px 5px 20px 0 rgba(23.00000000000011, 22.000000000000007, 138.99999999999994, .08);
     /* border-left: 8px solid #104cba; */
 }

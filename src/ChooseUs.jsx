@@ -1,10 +1,28 @@
 import { BorderColor } from "@mui/icons-material";
 import { Box, Container, Grid, Typography, useMediaQuery } from "@mui/material";
 import shadows from "@mui/material/styles/shadows";
-import React from "react";
+import React, { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import "./ChooseUs.css";
+// import WOW from "wowjs";
+// import 'animate.css';
+// import 'wowjs/css/libs/animate.css';
+// import "./wow.min.js";
+import Fade from "react-reveal/Fade";
+
 
 function ChooseUs() {
+  // useEffect(() => {
+  //   const wow = new WOW.WOW({
+  //     boxClass: "wow",
+  //     animateClass: "animated",
+  //     offset: 0,
+  //     mobile: true,
+  //     live: true,
+  //   });
+  //   wow.init();
+  // }, []);
   const matches = useMediaQuery("(max-width:900px)");
   const matches2 = useMediaQuery("(max-width:1100px)");
 
@@ -92,6 +110,9 @@ function ChooseUs() {
             alignItems: "center",
             paddingBottom: "10px",
           }}
+          // className="wow animate__animated animate__fadeInRight"
+          // data-wow-duration="2s"
+          // data-wow-delay="5s"
         >
           <Box
             className="vertical-line"
@@ -116,14 +137,15 @@ function ChooseUs() {
               paddingBottom: "15px",
             }}
           >
-            <Box
-            >
-              <img
-                src={item.imgUrl}
-                height="auto"
-                width={matches ? "70%" : "50%"}
-              />
-            </Box>
+            <Fade left duration={1000} cascade>
+              <Box>
+                <img
+                  src={item.imgUrl}
+                  height="auto"
+                  width={matches ? "70%" : "50%"}
+                />
+              </Box>
+            </Fade>
           </Grid>
 
           <Grid item md={5} sx={{ display: "flex", alignItems: "center" }}>
@@ -133,65 +155,73 @@ function ChooseUs() {
                 display: matches ? "none" : "block",
               }}
             ></Box>
-            <Grid
-              item
-              container
-              columnGap={2}
-              p={1}
-              className={`content-box ${
-                !matches && index % 2 == 0
-                  ? "marginLeftPlus"
-                  : !matches && "marginLeftMinus"
-              }`}
-              style={{
-                borderLeft: `8px solid ${item.border_color}`,
-              }}
+            <Fade
+              key={item.id}
+              right={index % 2 === 0}
+              left={index % 2 !== 0}
+              duration={1000}
+              cascade
             >
-              <Grid item xs={2} md={2} p>
-                <Typography
-                  sx={{
-                    color: "#fff",
-                    p: 1,
-                    // fontSize: matches ? "4.5vw" : "2vw",
-                    fontSize: "20px",
-                    background: item.color,
-                    borderRadius: "50%",
-                    height: matches ? "50px" : matches2 ? "45px" : "50px",
-                    // height: "",
-                    width: matches ? "50px" : matches2 ? "45px" : "50px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  {"0" + (index + 1)}
-                </Typography>
-              </Grid>
-              <Grid item xs={10} md={9}>
-                <Box sx={{ float: "right", display: "block" }}>
+              <Grid
+                item
+                container
+                columnGap={2}
+                p={1}
+                className={`content-box ${
+                  !matches && index % 2 == 0
+                    ? "marginLeftPlus"
+                    : !matches && "marginLeftMinus"
+                }`}
+                style={{
+                  borderLeft: `8px solid ${item.border_color}`,
+                }}
+              >
+                <Grid item xs={2} md={2} p>
                   <Typography
-                    mb={1}
-                    className="heading"
-                    fontWeight={"500"}
-                    color="black"
-                    style={{ fontSize: matches ? "4vw" : "2.2vw" }}
-                    lineHeight={1}
-                  >
-                    {item.title}
-                  </Typography>
-                  <Typography
-                    className="discretion"
-                    lineHeight={1}
-                    style={{
-                      fontSize: matches ? "3.3vw" : "1.4vw",
-                      opacity: 0.6,
+                    sx={{
+                      color: "#fff",
+                      p: 1,
+                      // fontSize: matches ? "4.5vw" : "2vw",
+                      fontSize: "20px",
+                      background: item.color,
+                      borderRadius: "50%",
+                      height: matches ? "50px" : matches2 ? "45px" : "50px",
+                      // height: "",
+                      width: matches ? "50px" : matches2 ? "45px" : "50px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
                     }}
                   >
-                    {item.description}
+                    {"0" + (index + 1)}
                   </Typography>
-                </Box>
+                </Grid>
+                <Grid item xs={10} md={9}>
+                  <Box sx={{ float: "right", display: "block" }}>
+                    <Typography
+                      mb={1}
+                      className="heading"
+                      fontWeight={"500"}
+                      color="black"
+                      style={{ fontSize: matches ? "4vw" : "2.2vw" }}
+                      lineHeight={1}
+                    >
+                      {item.title}
+                    </Typography>
+                    <Typography
+                      className="discretion"
+                      lineHeight={1}
+                      style={{
+                        fontSize: matches ? "3.3vw" : "1.4vw",
+                        opacity: 0.6,
+                      }}
+                    >
+                      {item.description}
+                    </Typography>
+                  </Box>
+                </Grid>
               </Grid>
-            </Grid>
+            </Fade>
           </Grid>
 
           <Grid
@@ -203,9 +233,11 @@ function ChooseUs() {
               display: index % 2 == 0 ? "none" : matches ? "none" : "block",
             }}
           >
-            <Box className="img-container">
-              <img src={item.imgUrl} height="auto" width="50%" />
-            </Box>
+            <Fade right duration={1000} cascade>
+              <Box className="img-container">
+                <img src={item.imgUrl} height="auto" width="50%" />
+              </Box>
+            </Fade>
           </Grid>
         </Grid>
       ))}
