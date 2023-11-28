@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from "react";
 import "./App.css";
 import {
@@ -18,6 +15,7 @@ import Contactus from "./Contactus";
 import About from "./About";
 import ChooseUs from "./ChooseUs";
 import Technology from "./Technology";
+import Training from "./Training";
 
 const theme = createTheme({
   palette: {
@@ -47,11 +45,14 @@ function App() {
         <section id="chooseus">
           <ChooseUs />
         </section>
-          <section id="technology">
-             <Box my={3}>
+        <section id="technology">
+          <Box my={3}>
             <Technology />
-             </Box>
-          </section>
+          </Box>
+        </section>
+        <section id="training">
+          <Training />
+        </section>
         <section id="contactus">
           <Contactus />
         </section>

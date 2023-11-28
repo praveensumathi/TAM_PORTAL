@@ -18,6 +18,7 @@ import CloseIcon from "@mui/icons-material/Close";
 const navItems = [
   { label: " Home", id: "home" },
   { label: "Services", id: "services" },
+  { label: "Training", id: "training" },
   { label: "Contact us", id: "contactus" },
 ];
 
@@ -36,12 +37,25 @@ export default function Navbar() {
     <Container>
       <AppBar component="nav">
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Typography
-            variant="h6"
-            sx={{ display: "flex", alignItems: "center" }}
-          >
-            TAMTREE
-          </Typography>
+          <Box sx={{ display: "flex" }}>
+            <img
+              src="assets\images\Tamtree_logo.png"
+              alt="tamtree-logo"
+              height="50px"
+              width="50px"
+              style={{ backgroundColor: "#fff", borderRadius: "50%" }}
+            />
+            <Typography
+              variant="h6"
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                marginLeft: "10px",
+              }}
+            >
+              TAMTREE
+            </Typography>
+          </Box>
           {matches ? (
             <IconButton
               color="inherit"
@@ -68,7 +82,6 @@ export default function Navbar() {
                         marginLeft: "20px",
                         marginRight: "10px",
                         cursor: "pointer",
-                        
                       }}
                       onClick={handleDrawerClose}
                     >
