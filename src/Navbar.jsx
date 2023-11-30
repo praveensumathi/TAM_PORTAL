@@ -43,17 +43,23 @@ export default function Navbar() {
               alt="tamtree-logo"
               height="50px"
               width="50px"
-              style={{ backgroundColor: "#fff", borderRadius: "50%" }}
+              style={{
+                backgroundColor: "#fff",
+                borderRadius: "50%",
+                marginRight: "10px",
+              }}
             />
             <Typography
               variant="h6"
               sx={{
                 display: "flex",
                 alignItems: "center",
-                marginLeft: "10px",
               }}
+              className="tamtree-title"
+              fontSize="35px"
+              fontWeight="400"
             >
-              TAMTREE
+              TamTree
             </Typography>
           </Box>
           {matches ? (

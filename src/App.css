@@ -13,7 +13,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .card {
@@ -27,16 +26,15 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   animation-fill-mode: both;
-
 }
 
 .card1:hover {
-  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp), url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp),
+    url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
   background-position: top right, bottom left;
   animation: myfirst 5s;
   animation-direction: alternate;
 }
-
 
 .card2 {
   background-position: top right;
@@ -45,35 +43,33 @@ body {
 }
 
 .card2:hover {
-  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp), url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp),
+    url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
   background-position: top right, bottom left;
-
 }
 
 .card3 {
   background-position: top right;
   background-repeat: no-repeat;
   background-size: auto;
-
 }
 
 .card3:hover {
-  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp), url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp),
+    url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
   background-position: top right, bottom left;
-
 }
 
 .card4 {
-
   background-position: top right;
   background-repeat: no-repeat;
   background-size: auto;
 }
 
 .card4:hover {
-  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp), url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
+  background-image: url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser09.webp),
+    url(https://softek.radiantthemes.com/wp-content/uploads/2022/11/Ser10.webp);
   background-position: top right, bottom left;
-
 }
 
 .card-content {
@@ -117,7 +113,6 @@ p {
 }
 
 .text:hover {
-
   background: linear-gradient(45deg, white, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: white;
@@ -126,4 +121,11 @@ p {
 
 .text:hover {
   color: rgb(245, 245, 245);
+}
+
+.tamtree-title {
+  background: #04820c;
+  background: linear-gradient(to bottom, #04820c 28%, #912323 69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
