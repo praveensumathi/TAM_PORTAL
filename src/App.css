@@ -124,8 +124,9 @@ p {
 }
 
 .tamtree-title {
-  background: #04820c;
-  background: linear-gradient(to bottom, #04820c 28%, #912323 69%);
+  background: #357033;
+  background: linear-gradient(to bottom, #357033 36%, #642321 69%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "NordiqueInline", sans-serif;
 }
